@@ -31,7 +31,32 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container" id="timeBlockContainer">
-      <!-- Timeblocks go here -->
+      <!-- Loop to generate time blocks -->
+<script>
+  for (var hour = businessHours; hour <= closingHour; hour++) {
+    // Create a time block element
+    var timeBlock = $('<div>').addClass('row time-block').attr('data-hour', hour);
+
+    // Add hour column
+    var hourColumn = $('<div>').addClass('col-md-1 hour').text(formatHour(hour));
+    timeBlock.append(hourColumn);
+
+    // Add textarea for user input
+    var eventInput = $('<textarea>').addClass('col-md-10 description');
+    timeBlock.append(eventInput);
+
+    // Add save button
+    var saveButton = $('<button>').addClass('col-md-1 saveBtn').html('<i class="fas fa-save"></i>');
+    timeBlock.append(saveButton);
+
+    // Append the time block to the container
+    $('#timeBlockContainer').append(timeBlock);
+
+    // Apply past, present, or future styling
+    applyTimeBlockStyle(timeBlock, hour, currentHour);
+  }
+</script>
+
     </div>
     
 
