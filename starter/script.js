@@ -1,5 +1,3 @@
-// script.js
-
 $(document).ready(function () {
     // Function to generate time blocks
     function generateTimeBlocks() {
@@ -32,6 +30,16 @@ $(document).ready(function () {
             // Add save button
             var saveButton = $('<button>').addClass('col-md-1 saveBtn').html('<i class="fas fa-save"></i>');
             timeBlock.append(saveButton);
+
+            // Add click event handler to save button
+            saveButton.on('click', function () {
+                // Retrieve the entered event from the corresponding textarea
+                var enteredEvent = $(this).siblings('.description').val();
+
+                // Save the entered event to local storage
+                var blockHour = $(this).parent().attr('data-hour');
+                localStorage.setItem('event_' + blockHour, enteredEvent);
+            });
 
             // Append the time block to the container
             $('#timeBlockContainer').append(timeBlock);
