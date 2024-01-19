@@ -27,11 +27,10 @@ $(document).ready(function () {
             var eventInput = $('<textarea>').addClass('col-md-10 description');
             timeBlock.append(eventInput);
 
-            // Add save button
+            // Add click event handler to save button
             var saveButton = $('<button>').addClass('col-md-1 saveBtn').html('<i class="fas fa-save"></i>');
             timeBlock.append(saveButton);
 
-            // Add click event handler to save button
             saveButton.on('click', function () {
                 // Retrieve the entered event from the corresponding textarea
                 var enteredEvent = $(this).siblings('.description').val();
@@ -46,6 +45,12 @@ $(document).ready(function () {
 
             // Apply past, present, or future styling
             applyTimeBlockStyle(timeBlock, hour, dayjs().hour());
+
+            // Retrieve and populate saved events from local storage
+            var savedEvent = localStorage.getItem('event_' + hour);
+            if (savedEvent) {
+                eventInput.val(savedEvent);
+            }
         }
 
         // Apply past, present, or future styling to time blocks
