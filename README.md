@@ -25,10 +25,5 @@ No installation is required for this web application. Simply open the provided H
 ## File Structure
 
 
-## Credits
-- [Bootstrap](https://getbootstrap.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [Day.js](https://day.js.org/docs/en/display/format)
-
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
