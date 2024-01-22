@@ -24,12 +24,6 @@ No installation is required for this web application. Simply open the provided H
 
 ## File Structure
 
-/work-day-scheduler
-|-- index.html
-|-- script.js
-|-- style.css
-|-- images/ (any images used in the README or application)
-|-- README.md
 
 ## Credits
 - [Bootstrap](https://getbootstrap.com/)
