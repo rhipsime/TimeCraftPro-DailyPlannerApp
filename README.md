@@ -6,7 +6,10 @@ A daily planner that transforms your workday into an adventure of organised prod
 A simple calendar app for scheduling your work day. This application allows users to save events for each hour of the day, persisting data between page refreshes.
 
 ## Screenshots
-[Include screenshots or a gif of your application here]
+[Picture 1](<starter/Assets/screenshots/Screenshot 2024-01-22 at 20.26.08.png>)
+
+[Picture 2](<starter/Assets/screenshots/Screenshot 2024-01-22 at 20.26.46.png>)
+
 
 ## Deployed Application
 [Link to your deployed application]
@@ -31,7 +34,8 @@ No installation is required for this web application. Simply open the provided H
 |   |-- css
 |       |-- style.css
     |-- screenshots
-|       |-- 
+        |--Screenshot 2024-01-22 at 20.26.08.png
+        |--Screenshot 2024-01-22 at 20.26.46.png
 |-- README.md
 
 
