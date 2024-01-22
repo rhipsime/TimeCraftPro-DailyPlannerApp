@@ -23,6 +23,16 @@ No installation is required for this web application. Simply open the provided H
 - Events persist between page refreshes.
 
 ## File Structure
+/work-day-scheduler
+|-- index.html
+|-- assets
+|   |-- js
+|   |   |-- script.js
+|   |-- css
+|       |-- style.css
+    |-- screenshots
+|       |-- 
+|-- README.md
 
 
 ## License
