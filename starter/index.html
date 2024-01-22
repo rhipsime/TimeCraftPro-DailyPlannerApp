@@ -9,7 +9,7 @@
       rel="stylesheet" 
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
       crossorigin="anonymous"
-      />
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -31,34 +31,8 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container" id="timeBlockContainer">
-      <!-- Loop to generate time blocks -->
-<script>
-  for (var hour = businessHours; hour <= closingHour; hour++) {
-    // Create a time block element
-    var timeBlock = $('<div>').addClass('row time-block').attr('data-hour', hour);
-
-    // Add hour column
-    var hourColumn = $('<div>').addClass('col-md-1 hour').text(formatHour(hour));
-    timeBlock.append(hourColumn);
-
-    // Add textarea for user input
-    var eventInput = $('<textarea>').addClass('col-md-10 description');
-    timeBlock.append(eventInput);
-
-    // Add save button
-    var saveButton = $('<button>').addClass('col-md-1 saveBtn').html('<i class="fas fa-save"></i>');
-    timeBlock.append(saveButton);
-
-    // Append the time block to the container
-    $('#timeBlockContainer').append(timeBlock);
-
-    // Apply past, present, or future styling
-    applyTimeBlockStyle(timeBlock, hour, currentHour);
-  }
-</script>
-
+      <!-- Timeblocks go here -->
     </div>
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
